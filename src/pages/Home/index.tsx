@@ -1,6 +1,6 @@
+import { Button } from "@material-ui/core";
 import React, { useCallback } from "react";
 import { useHistory } from "react-router-dom";
-import { Button } from "react-bootstrap";
 import Menu from "../../components/Menu";
 import "./styles.css";
 
@@ -26,24 +26,21 @@ const Home: React.FC = () => {
         <Button
           className="btn"
           onClick={handleOnClickUser}
-          variant="primary"
-          size="sm"
+          variant="contained" color="primary"
         >
           Cadastro de usuario
         </Button>
         <Button
           className="btn"
           onClick={handleOnClickEmployee}
-          variant="primary"
-          size="sm"
+          variant="contained" color="primary"
         >
           Cadastro de colaborador
         </Button>
         <Button
           className="btn"
           onClick={handleOnClickAdmin}
-          variant="primary"
-          size="sm"
+          variant="contained" color="primary"
         >
           Cadastro de administrador
         </Button>

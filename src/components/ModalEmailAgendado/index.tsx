@@ -1,3 +1,4 @@
+import { TextField } from "@material-ui/core";
 import React from "react";
 import { Button, Form, Modal } from "react-bootstrap";
 
@@ -29,10 +30,15 @@ const EnviarEmailAgendado: React.FC<ModalEnviarEmailAgendadoProps> = ({
               <Form.Label>Assunto</Form.Label>
               <Form.Control type="assunto" placeholder="Assunto" />
             </Form.Group>
-            <Form.Group className="modal-assunto">
-              <Form.Label className="element-date">Data </Form.Label>
-              <input type="date" />
-            </Form.Group>
+            <TextField
+              id="datetime-local"
+              label="Horário programado"
+              type="datetime-local"
+              defaultValue="2017-05-24T10:30"
+              InputLabelProps={{
+                shrink: true,
+              }}
+            />
             <Form.Group
               className="modal-descricao"
               controlId="exampleForm.ControlTextarea1"

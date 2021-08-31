@@ -1,9 +1,11 @@
+import { Button, TextField } from "@material-ui/core";
 import React, { useCallback, useState } from "react";
-import { Button, Modal } from "react-bootstrap";
+import { Modal } from "react-bootstrap";
 import ModalContato from "../ModalContato";
 import EnviarEmailAgendado from "../ModalEmailAgendado";
 import EnviarEmail from "../ModalEnviarEmail";
 import "./styles.css";
+import Autocomplete from '@material-ui/lab/Autocomplete';
 
 const Menu: React.FC = () => {
   const [show, setShow] = useState(false);
@@ -34,48 +36,60 @@ const Menu: React.FC = () => {
     setShow(false);
   }, []);
 
+  const contacts = [
+    { title: 'João Silva', year: 1994 },
+    { title: 'Pedro Rodrigues', year: 1972 },
+    { title: 'Lucas Carvalho', year: 1974 },
+    { title: 'Rhayann', year: 2008 },
+  ];
+
   return (
     <div className="container-menu">
       <div className="searchContainer">
-        <input type="text" placeholder="Search.." name="search" />
-        <button type="submit">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="currentColor"
-            className="bi bi-search"
-            viewBox="0 0 16 16"
-          >
-            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-          </svg>
-        </button>
+      <Autocomplete
+        freeSolo
+        id="free-solo-2-demo"
+        disableClearable
+        options={contacts.map((option) => option.title)}
+        renderInput={(params: any) => (
+          <TextField
+            {...params}
+            label="Search input"
+            margin="normal"
+            variant="standard"
+            InputProps={{ ...params.InputProps, type: 'search' }}
+          />
+        )}
+      />
       </div>
 
       <div className="optionsContainer">
         <Button
           onClick={handleOnClick}
           className="btnNovo"
-          variant="outline-light"
-          size="sm"
+          variant="contained"
+          
         >
           Enviar
         </Button>
-        <Button className="btnEntrada" variant="outline-light" size="sm">
+        <Button className="btnEntrada" variant="contained" >
           Caixa de entrada
         </Button>
         <Button
           onClick={handleOnClickShowContato}
           className="btnContatos"
-          variant="outline-light"
-          size="sm"
+          variant="contained" 
         >
           Contatos
         </Button>
-        <Button className="btnEnviados" variant="outline-light" size="sm">
+        <Button className="btnEnviados" variant="contained" >
           Emails enviados
         </Button>
-        <Button onClick={handleOnClickShowAgendado} className="btnAgendados" variant="outline-light" size="sm">
+        <Button
+          onClick={handleOnClickShowAgendado}
+          className="btnAgendados"
+          variant="contained" 
+        >
           Emails agendados
         </Button>
         {show && (
@@ -102,7 +116,7 @@ const Menu: React.FC = () => {
           </Modal>
         )}
 
-{showAgendado && (
+        {showAgendado && (
           <Modal
             show={handleOnClickShowAgendado}
             onHide={handleOnCloseAgendado}
