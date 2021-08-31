@@ -1,0 +1,22 @@
+body {
+  height: 100vh;
+}
+
+.btn {
+  margin: 16px;
+}
+
+.element-date {
+  margin: 16px;
+}
+
+label {
+  margin: 8px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
