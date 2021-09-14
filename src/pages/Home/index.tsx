@@ -86,17 +86,11 @@ const Home: React.FC = () => {
         <div className="searchContainer">
           <Autocomplete
             freeSolo
-            id="free-solo-2-demo"
+            id="Pesquisar"
             disableClearable
             options={contacts.map((option) => option.title)}
             renderInput={(params: any) => (
-              <TextField
-                {...params}
-                label="Pesquisar"
-                margin="normal"
-                variant="standard"
-                InputProps={{ ...params.InputProps, type: "search" }}
-              />
+              <TextField {...params} label="Pesquisar" variant="outlined" />
             )}
           />
         </div>
