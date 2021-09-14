@@ -1,15 +1,11 @@
+  
   html, body {
-    background: #FEFEFE;
-    font-family: 'Balsamiq Sans', sans-serif;
-    height: 100%;
+    font-family: 'Roboto', sans-serif;
   }
   
   body {
-    background-image: url("http://conteudo.castorweb.com.br/wp-content/uploads/2018/11/Blue-Gradient-Background-Wallpaper.jpg");
     width: 100%;
     margin: 0;
-    max-width: 1920px;
-    max-height: 1080px;
     overflow: hidden;
   }
 

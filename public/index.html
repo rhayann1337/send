@@ -26,9 +26,23 @@
   crossorigin="anonymous"
 />
 
+<link rel="stylesheet" href="https://npmcdn.com/react-bootstrap-table/dist/react-bootstrap-table-all.min.css">
+</link>
+
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 
+<script src="path/to/react-bootstrap-table/dist/react-bootstrap-table.min.js"></script>
+<script src="https://npmcdn.com/react-bootstrap-table/dist/react-bootstrap-table.min.js" ></script>
+
+<script src="https://unpkg.com/react/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/prop-types/prop-types.min.js"></script>
+<script src="https://unpkg.com/recharts/umd/Recharts.js"></script>
+
+<script>
+  var ReactBsTable = window.BootstrapTable;
+</script>
 
 <script>var Alert = ReactBootstrap.Alert;</script>
     
@@ -37,7 +51,7 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root" style="height: 100vh"></div>
+    <div id="root" style="height: 100vh; overflow: auto;"></div>
     
   </body>
 </html>

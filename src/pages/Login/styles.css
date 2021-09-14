@@ -1,0 +1,26 @@
+
+.containerBody {
+    height: 100%;
+    width: 100%;
+    background-image: url(../../assets//wallpaper1.jpg);
+}
+
+.containerLogin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.containerFormLogin{
+    display: flex;
+    flex-direction: column;
+}
+
+.containerStyleLogin{
+    background: white;
+    border-radius: 16px;
+    padding: 16px;
+    border: 1px black solid;
+    box-shadow: 0 0 1em black;
+}

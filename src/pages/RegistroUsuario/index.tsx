@@ -1,9 +1,13 @@
 import React from "react";
 import { Col, Form, Row, Button } from "react-bootstrap";
+import Header from "../../components/Header";
 import "./styles.css";
 
 const RegistroAdministrador: React.FC = () => {
   return (
+    <>
+    <Header />
+    <div className="containerRegistroTotal">
     <div className="containerRegistroGeral">
       <div className="containerRegistro">
         <Form>
@@ -89,6 +93,8 @@ const RegistroAdministrador: React.FC = () => {
         </Form>
       </div>
     </div>
+    </div>
+    </>
   );
 };
 

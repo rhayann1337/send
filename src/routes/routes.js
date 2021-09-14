@@ -5,11 +5,13 @@ import Home from '../pages/Home'
 import RegistroColaborador from "../pages/RegistroColaborador";
 import RegistroUsuario from "../pages/RegistroUsuario";
 import RegistroAdministrador from "../pages/RegistroAdministrador";
+import Login from "../pages/Login";
 
 const Routes = () => {
    return(
        <BrowserRouter>
             <Route component = { Home }  path="/" exact />
+            <Route component = { Login }  path="/login" exact />
             <Route component = { RegistroColaborador }  path="/cadastro-colaborador" exact />
             <Route component = { RegistroUsuario }  path="/cadastro" exact />
             <Route component = { RegistroAdministrador }  path="/cadastro-adm" exact />

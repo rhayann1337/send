@@ -4,6 +4,7 @@ import "./styles.css";
 
 const RegistroAdministrador: React.FC = () => {
   return (
+    <div className="containerRegistroTotal">
     <div className="containerRegistroGeral">
       <div className="containerRegistro">
         <Form>
@@ -88,6 +89,7 @@ const RegistroAdministrador: React.FC = () => {
           </div>
         </Form>
       </div>
+    </div>
     </div>
   );
 };
