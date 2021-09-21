@@ -2,6 +2,13 @@
 # yarn lockfile v1
 
 
+"@mailchimp/mailchimp_transactional@^1.0.39":
+  version "1.0.39"
+  resolved "https://registry.yarnpkg.com/@mailchimp/mailchimp_transactional/-/mailchimp_transactional-1.0.39.tgz#e8e00fcc28f6b05b192b6090ae883893a8cd996e"
+  integrity sha512-jRzgB981ThXtVcey8w8fOjP+lUeZ+IHtcMIAAWtvGmVuD4WOVe1kXJVLdLA16ROu7obt9L8Y3KJ+DWx0OshqhA==
+  dependencies:
+    axios "^0.21.1"
+
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
@@ -82,7 +89,7 @@ array-flatten@1.1.1:
   resolved "https://registry.yarnpkg.com/array-flatten/-/array-flatten-1.1.1.tgz#9a5f699051b1e7073328f2a008968b64ea2955d2"
   integrity sha1-ml9pkFGx5wczKPKgCJaLZOopVdI=
 
-axios@^0.21.4:
+axios@^0.21.1, axios@^0.21.4:
   version "0.21.4"
   resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.4.tgz#c67b90dc0568e5c1cf2b0b858c43ba28e2eda575"
   integrity sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==

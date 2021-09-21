@@ -7,6 +7,7 @@ const UsuarioColaboradorController = require('./controllers/UsuarioColaboradorCo
 const UsuarioAdminController = require('./controllers/UsuarioAdminController')
 const LoginController = require('./controllers/LoginController')
 const EmailController = require('./controllers/EmailController')
+const MailChimpTest = require('./services/MailChimpTest')
 //Usuario
 routes.post('/users', UserController.store);
 routes.get('/users', UserController.index);
@@ -25,5 +26,6 @@ routes.get('/users/:usuarioId', UsuarioAdminController.show);
 
 routes.post('/login', LoginController.login);
 routes.post('/email', EmailController.envio);
+routes.post('/mailchimp', EmailController.mailchimp);
 
 module.exports = routes

@@ -7,6 +7,7 @@
     "dev": "nodemon src/server.js"
   },
   "dependencies": {
+    "@mailchimp/mailchimp_transactional": "^1.0.39",
     "axios": "^0.21.4",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
